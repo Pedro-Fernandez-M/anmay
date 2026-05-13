@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { MessageCircle, ChevronDown, MapPin } from "lucide-react";
-import { WHATSAPP_URL } from "@/lib/config";
+import { WHATSAPP_URL, BASE_PATH } from "@/lib/config";
 
 export default function Hero() {
   const scrollTo = (id: string) => {
@@ -47,7 +47,7 @@ export default function Hero() {
             <div className="absolute inset-[-8px] rounded-3xl gradient-bg opacity-20 blur-xl" />
             <div className="absolute inset-0 rounded-3xl overflow-hidden">
               <Image
-                src="/images/logo-hero.png"
+                src={`${BASE_PATH}/images/logo-hero.png`}
                 alt="ANMAY Salón & Boutique"
                 fill
                 className="object-cover"

@@ -4,7 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { MessageCircle, Instagram, MapPin, Clock } from "lucide-react";
-import { WHATSAPP_URL, INSTAGRAM_URL, LOCATION } from "@/lib/config";
+import { WHATSAPP_URL, INSTAGRAM_URL, LOCATION, BASE_PATH } from "@/lib/config";
 
 export default function Contact() {
   const ref = useRef(null);
@@ -57,7 +57,7 @@ export default function Contact() {
           <div className="flex justify-center mb-8">
             <div className="relative w-24 h-24">
               <Image
-                src="/images/logo-dark.png"
+                src={`${BASE_PATH}/images/logo-dark.png`}
                 alt="ANMAY"
                 fill
                 className="object-contain"

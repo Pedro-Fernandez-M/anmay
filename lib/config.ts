@@ -21,6 +21,8 @@ export const BUSINESS_NAME = "ANMAY Salón & Boutique";
 
 export const OWNER_NAME = "Anjela R. Calderón Parra";
 
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 // ─────────────────────────────────────────────
 // Galería de Instagram — agrega los shortcodes de tus posts
 // El shortcode es la parte de la URL después de /p/

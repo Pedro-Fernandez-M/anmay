@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { WHATSAPP_URL } from "@/lib/config";
+import { WHATSAPP_URL, BASE_PATH } from "@/lib/config";
 
 const navLinks = [
   { label: "Servicios", href: "#servicios" },
@@ -48,7 +48,7 @@ export default function Navbar() {
         >
           <div className="relative w-11 h-11 overflow-hidden rounded-xl">
             <Image
-              src="/images/logo-icon.png"
+              src={`${BASE_PATH}/images/logo-icon.png`}
               alt="ANMAY"
               fill
               className="object-contain"

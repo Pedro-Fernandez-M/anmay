@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Instagram, MessageCircle, Heart } from "lucide-react";
-import { WHATSAPP_URL, INSTAGRAM_URL } from "@/lib/config";
+import { WHATSAPP_URL, INSTAGRAM_URL, BASE_PATH } from "@/lib/config";
 
 const navLinks = [
   { label: "Servicios", href: "#servicios" },
@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start gap-3">
             <div className="relative w-12 h-12">
               <Image
-                src="/images/logo-icon.png"
+                src={`${BASE_PATH}/images/logo-icon.png`}
                 alt="ANMAY"
                 fill
                 className="object-contain"

@@ -4,7 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { Award, Users, Heart, Sparkles, MessageCircle } from "lucide-react";
-import { WHATSAPP_URL } from "@/lib/config";
+import { WHATSAPP_URL, BASE_PATH } from "@/lib/config";
 
 const stats = [
   { icon: Award, value: "5+", label: "Años de experiencia" },
@@ -48,7 +48,7 @@ export default function About() {
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
                 <div className="relative w-52 h-52">
                   <Image
-                    src="/images/logo-dark.png"
+                    src={`${BASE_PATH}/images/logo-dark.png`}
                     alt="ANMAY"
                     fill
                     className="object-contain opacity-90"

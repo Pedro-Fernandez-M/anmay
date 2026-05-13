@@ -4,7 +4,9 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
-  trailingSlash: true,  basePath: '/anmay',
-  assetPrefix: '/anmay',};
+  trailingSlash: true,
+  basePath: "/anmay",
+  assetPrefix: "/anmay",
+};
 
 export default nextConfig;
